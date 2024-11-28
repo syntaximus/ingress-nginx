@@ -14,7 +14,7 @@
 
 ARG GOLANG_VERSION
 
-FROM golang:${GOLANG_VERSION}-alpine3.20 as builder
+FROM arm64v8/golang:${GOLANG_VERSION}-alpine3.20 as builder
 
 RUN apk update \
     && apk upgrade && apk add git
